@@ -4,6 +4,9 @@ import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt
 
+
+
+
 # Dataset = pd.read_csv("D:\Lessons\Machine Learcning\Training\T2\wind_dataset.csv")
 Dataset = pd.read_csv("D:\Lessons\Machine Learcning\Training\T2\X_train.csv")
 
