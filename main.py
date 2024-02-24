@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+
+
 data = pd.read_csv("D:\Lessons\Machine Learcning\Training\T2\Bodyfat.csv")
 
 data = data.fillna(method='ffill')
@@ -13,6 +15,8 @@ print(np.shape(data))
 print(x[0], y[0])
 
 print(data.describe())
+
+
 
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
