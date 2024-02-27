@@ -1,3 +1,6 @@
+**Machine Learning Course Supervised**
+______________________________________________________
+
 **Question1**: Write a program that receives a number of arbitrary two-dimensional data points from the user via the mouse, and then draws the least squares regression line for the data.
 
 **Answer**: To start, we need to collect an arbitrary number of data points from the user's mouse location on the screen. Next, it's time to calculate the equation 𝑦 = 𝑤₀ + 𝑤₁𝑥, for which we need to find 𝑤 and then extract 𝑤₀ and 𝑤₁. Finally, the line is drawn based on the formula 𝑦 = 𝑤₀ + 𝑤₁𝑥 − 𝑤₁𝑥(𝑡−1).
