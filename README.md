@@ -1,9 +1,10 @@
-**Machine Learning Course Supervised**
-______________________________________________________
+# Machine Learning Course Supervised
 
-**Question1**: Write a program that receives a number of arbitrary two-dimensional data points from the user via the mouse, and then draws the least squares regression line for the data.
+### **Question 1 :**
+Write a program that receives a number of arbitrary two-dimensional data points from the user via the mouse, and then draws the least squares regression line for the data.
 
-**Answer**: To start, we need to collect an arbitrary number of data points from the user's mouse location on the screen. Next, it's time to calculate the equation 𝑦 = 𝑤₀ + 𝑤₁𝑥, for which we need to find 𝑤 and then extract 𝑤₀ and 𝑤₁. Finally, the line is drawn based on the formula 𝑦 = 𝑤₀ + 𝑤₁𝑥 − 𝑤₁𝑥(𝑡−1).
+**Answer :**
+To start, we need to collect an arbitrary number of data points from the user's mouse location on the screen. Next, it's time to calculate the equation 𝑦 = 𝑤₀ + 𝑤₁𝑥, for which we need to find 𝑤 and then extract 𝑤₀ and 𝑤₁. Finally, the line is drawn based on the formula 𝑦 = 𝑤₀ + 𝑤₁𝑥 − 𝑤₁𝑥(𝑡−1).
 
 Here is a more detailed explanation of each step:
 Collecting data points: We can use the ginput function from the matplotlib.pyplot library to get the coordinates of the points from the user.
@@ -14,7 +15,8 @@ Drawing the regression line: We can use the plot function from the matplotlib.py
 ![image](https://github.com/sina-razaghi/ML-Course-Supervised/assets/47954697/281bd8e5-8934-4492-804d-839bb7e1ae20)
 
 
-**Question2**: Find a dataset related to a specific field in a way that is related to the regression problem. Then write a program to investigate the following items with the least square error regressor on this data:
+### **Question2**: 
+Find a dataset related to a specific field in a way that is related to the regression problem. Then write a program to investigate the following items with the least square error regressor on this data:
 A. Dimensions of the problem (number of features)
 B. Number of samples
 C. Noise level
@@ -23,8 +25,7 @@ E. Effect of regulation
 F. A combination of the above
 Then, for each of the above cases, after dividing the data of each set into training and experimental data (with the 10-fold method), for each data set separately, a linear regressor based on the least square error is calculated and the amount of error report with different criteria. Finally, interpret and analyze all your findings.
 
-**Answer**
-
+**Answer :**
 1. Choose a Dataset: **‫‪Prediction‬‬‫‪Speed‬‬ ‫‪Wind‬‬**
 Start by selecting a dataset from a field of your interest that can be used for regression analysis. Here are some examples:
 Field: Housing prices
@@ -71,3 +72,10 @@ Interpret the results: How do the findings relate to the chosen dataset and the 
 Draw conclusions: Based on your analysis, can a linear least square regressor be an appropriate choice for this data? Explain your reasoning.
 ![image](https://github.com/sina-razaghi/ML-Course-Supervised/assets/47954697/6a8cba69-a8f3-4556-a2ed-bf92010c855c)
 
+### **Question 3 :**
+Write a program that generates 1000 two-dimensional data of 4 classes (each class has 250 data). Preferably, the data should have an acceptable linear separation, but have little overlap. From these data, 800 samples should be considered for training and 200 samples for testing. Then run the multi-class perceptron algorithm and perform the following operations:
+A. During the execution of the injection algorithm, decision boundaries should be shown (only for a few times)
+B. At the end of the algorithm, the decision boundaries should be shown
+C. The results of the test data are shown in the boundaries of the final decision
+
+**Answer :**
